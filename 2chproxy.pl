@@ -582,7 +582,7 @@ sub html2dat() {
         res_number => ($1),
         email => $2 // "",
         name_hash => $3 // $4 // "",
-        date_se_id => $5 . (($6)?(" ".$6):""),
+        date_se_id => $5 . (($6 ne "")?(" ".$6):""),
         be1 => $7 // "",
         be2 => $8 // "",
         content => $9 // "",
